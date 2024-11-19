@@ -1,0 +1,628 @@
+/* General */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    
+    background-color: #f9f9f9; /* Light background for contrast */
+    
+    line-height: 1.5;
+    margin: 0;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  
+    
+  }
+  .nav__logo a {
+    font-size: 30px;
+}
+  /* General button styling */
+button, .btn {
+  background-color: navy; /* Dark navy background */
+  color: white; /* White text for contrast */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+
+/* Keyframes for slide-in effect */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  100% {
+    transform: translateX(0); /* End at its normal position */
+  }
+}
+
+/* Apply the slide-in effect when hovering */
+.button_slide:hover .btn {
+  animation: slideIn 0.5s ease-out; /* Slide-in animation on hover */
+  background-color: darkblue; /* Slightly darker blue on hover */
+  color: gold; /* Gold accent on text */
+}
+
+  /* Header */
+  .header {
+    background: url('background.jpg') no-repeat center center/cover;
+    color:gold;
+    text-align: center;
+    padding: 50px 20px;
+  }
+  
+  
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+  }
+  
+  .nav__links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav__links a:hover {
+    color: gold;
+  }
+  
+
+  .header__content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .header__socials a {
+    margin: 0 10px;
+    color: white;
+    font-size: 1.2rem;
+  }
+  
+  .header__socials a:hover {
+    color: gold;
+  }
+  
+  
+  
+  /* About Section */
+  #about {
+    padding: 40px 0;
+    background-color: white;
+    color: #333;
+    text-align: left; /* Aligns the text to the left */
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px; /* Adds spacing between columns */
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 100%;
+    border-radius: 15px;
+  height: auto;
+  transform: translateX(-100%); /* Start off-screen */
+  animation: slideIn 1s ease-out forwards; /* Apply slide-in animation */
+}
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  100% {
+    transform: translateX(0); /* End at its normal position */
+  }
+}
+
+.about-col-2 {
+    flex-basis: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Aligns content vertically */
+}
+
+.sub-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50; /* Dark blue for a luxury feel */
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.8; /* Improves readability */
+    color: #555; /* Softer gray for body text */
+}
+.header__content p {
+  color: white; /* Sets text color to white */
+  font-size: 16px; /* Adjust font size if needed */
+  margin: 0; /* Optional: Resets margin */
+}
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ 
+}
+
+/* Body and container styling */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+} */
+
+/* Styling for the services section */
+.services {
+  text-align: center;
+  padding: 40px;
+}
+
+/* Title styling */
+.services h1 {
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+
+/* Container for service cards */
+.service-cards {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  
+}
+
+/* Styling for each service card */
+.service-card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 250px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Styling for the service card headings */
+.service-card h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: navy; /* Navy for headlines */
+  margin-bottom: 10px;
+  
+}
+
+/* Styling for the service card paragraphs */
+.service-card p {
+  font-size: 1em;
+  color: #666;
+}
+
+/* Hover effect for the service card */
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+  
+
+  /* Section styling */
+.testimonial-section {
+  background-color: #f8f8f8; /* Soft gray for a luxurious look */
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* Title and subtitle styling */
+.section-title {
+  font-size: 2.5rem;
+  font-family: 'Poppins', sans-serif;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  font-size: 1.2rem;
+  color: #777;
+  margin-bottom: 40px;
+}
+
+/* Testimonial grid styling */
+.testimonial-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Individual testimonial card */
+.testimonial-card {
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  padding: 20px;
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Testimonial text styling */
+.testimonial-text {
+  font-style: italic;
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Hover effect for cards */
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Author details styling */
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Author image styling */
+.testimonial-author img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #007bff; /* Add a border for a luxury touch */
+}
+
+/* Author name and designation */
+.author-details h4 {
+  font-size: 1.1rem;
+  color: #333;
+  margin: 0;
+}
+
+.author-details p {
+  font-size: 0.9rem;
+  color: #777;
+  margin: 0;
+}
+/* General Styles */
+/* body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9; /* Light background for contrast 
+  color: #333; Dark gray text
+} */
+
+/* Quote Container */
+.quote-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.quote-container h2 {
+  font-size: 1.8em;
+  color: navy;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.quote-form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.quote-form input,
+.quote-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.quote-form input:focus,
+.quote-form textarea:focus {
+  border-color: navy;
+  outline: none;
+}
+
+.quote-form button {
+  background-color: navy; /* Dark navy background */
+  color: white; /* White text for contrast */
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  outline: none;
+}
+/* Keyframes for slide-in effect */
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+  }
+  100% {
+    transform: translateX(0); /* End at its normal position */
+  }
+}
+
+.quote-form button:hover {
+  animation: slideIn 0.5s ease-out; /* Slide-in animation on hover */
+  background-color: darkblue; /* Slightly darker blue on hover */
+  color: gold; /* Gold accent on text */
+}
+
+  
+  /* Reset Styles */
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* General Body Styling */
+/* body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.5;
+} */
+
+/* Footer Styling */
+.footer {
+  /* background: #333;
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  gap: 20px; Spacing between columns on smaller screens */
+  background: #1e1e2f; /* Dark navy shade */
+  color: white;
+  padding: 30px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Allows wrapping for smaller screens */
+  gap: 20px; /* Spacing between columns on smaller screens */
+}
+
+.footer__col {
+  flex: 1 1 200px; /* Flex-grow, flex-shrink, flex-basis */
+  min-width: 200px; /* Ensures columns do not shrink too small */
+  
+}
+
+.footer__col h3, 
+.footer__col h4 {
+  margin-bottom: 10px;
+  font-size: 1.2em;
+  color: gold;
+  
+}
+
+.footer__col p,
+.footer__col a {
+  margin-bottom: 8px;
+  color: lightgray;
+  text-decoration: none;
+  
+}
+
+.footer__col a:hover {
+  color: gold;
+}
+
+/* Social Media Section */
+.social-media {
+  display: flex;
+  flex-wrap: wrap; /* Wraps buttons on smaller screens */
+  gap: 15px; /* Space between buttons */
+  margin-top: 20px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px;
+  font-size: 1em;
+  color: gold;
+  background-color: navy;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* .social-link i {
+  margin-right: 8px;
+  font-size: 1.2em;
+}
+
+.social-link:hover {
+  background-color: darkblue;
+} */
+.social-media .social-link i {
+  opacity:0.6; /* Icons start invisible */
+  transition: opacity 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover state: icons become visible */
+.social-media .social-link:hover i {
+  opacity: 10; /* Icons become fully visible */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer {
+      text-align: center;
+  }
+  .footer__col {
+      text-align: center;
+  }
+  .social-media {
+      justify-content: center;
+  }
+}
+
+
+
+
+  /* Live Chat Button */
+#live-chat {
+  position: fixed;
+  bottom: 20px; /* Adjust distance from the bottom */
+  right: 20px; /* Adjust distance from the right */
+  z-index: 1000;
+}
+
+.chat-btn {
+  background-color: #2c3e50; /* Dark blue for a luxury feel */
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: all 0.3s ease;
+}
+
+.chat-btn i {
+  font-size: 20px;
+  
+}
+
+.chat-btn:hover {
+  background-color: darkblue;
+ 
+    color: gold; /* Gold accent on text */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-3px); /* Subtle lift effect */
+}
+
+.chat-btn:active {
+  transform: translateY(1px); /* Press-down effect */
+}
+/* Tablet and smaller devices */
+@media (max-width: 1024px) {
+  .header__content {
+      padding: 15px;
+  }
+
+  .header__content p {
+      font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Adjust header text for smaller screens */
+  .header-text {
+      margin-top: 50%;
+      font-size: 16px;
+  }
+
+  .header-text h1 {
+      font-size: 30px;
+  }
+
+  /* Show menu icons (bars and close) on smaller screens */
+  nav .fa-bars,
+  nav .fa-xmark {
+      display: block;
+      font-size: 25px;
+      color: white;
+      cursor: pointer;
+  }
+
+  /* Styling for the navigation menu on small screens */
+  nav ul {
+      background: #ff004f;
+      position: fixed;
+      top: 0;
+      right: -200px; /* Start with the menu hidden off-screen */
+      width: 200px;
+      height: 100vh;
+      padding-top: 50px;
+      z-index: 2;
+      transition: right 0.5s ease; /* Smooth slide-in transition */
+      flex-direction: column; /* Stack items vertically */
+  }
+
+  /* Center each menu item */
+  nav ul li {
+      display: block;
+      text-align: center;
+      margin: 25px 0;
+  }
+
+  /* Close icon inside the menu */
+  nav ul .fa-xmark {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+  }
+  .sub-title{
+      font-size: 40px;
+  }
+  .about-col-1, .about-col-2{
+      flex-basis: 100%;
+  }
+  .about-col-1{
+      margin-bottom: 30px;
+  }
+  .about-col-2{
+      font-size: 14px;
+  }
+  .tab-links{
+      font-size: 16px;
+      margin-right: 20px;
+  }
+  .contact-left, .contact-right{
+      flex-basis: 100%;
+  }
+  .copyright{
+      font-size: 14px;
+  }
+}
+
+
+
+
+
+  
